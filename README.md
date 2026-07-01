@@ -101,5 +101,5 @@ This project can support studies related to:
 
 ## Author
 
-Eng.Naif Alanazi (Electrical Engineer)
+Eng.Naif Abdulkarim Ayyash Alanazi (Electrical Engineer)
 
