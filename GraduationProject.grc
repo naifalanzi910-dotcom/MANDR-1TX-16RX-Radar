@@ -1,0 +1,753 @@
+options:
+  parameters:
+    author: ''
+    catch_exceptions: 'True'
+    category: '[GRC Hier Blocks]'
+    cmake_opt: ''
+    comment: ''
+    copyright: ''
+    description: ''
+    gen_cmake: 'On'
+    gen_linking: dynamic
+    generate_options: qt_gui
+    hier_block_src_path: '.:'
+    id: untitled
+    max_nouts: '0'
+    output_language: python
+    placement: (0,0)
+    qt_qss_theme: ''
+    realtime_scheduling: ''
+    run: 'True'
+    run_command: '{python} -u {filename}'
+    run_options: prompt
+    sizing_mode: fixed
+    thread_safe_setters: ''
+    title: Not titled yet
+    window_size: (1000,1000)
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [8, 8]
+    rotation: 0
+    state: enabled
+
+blocks:
+- name: V
+  id: variable
+  parameters:
+    comment: ''
+    value: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [360, 12.0]
+    rotation: 0
+    state: enabled
+- name: samp_rate
+  id: variable
+  parameters:
+    comment: ''
+    value: 32e6
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [200, 12]
+    rotation: 0
+    state: enabled
+- name: zeromq_pull_source_0
+  id: zeromq_pull_source
+  parameters:
+    address: tcp://127.0.0.1:5551
+    affinity: ''
+    alias: ''
+    bind: 'False'
+    comment: ''
+    hwm: '-1'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    pass_tags: 'False'
+    timeout: '1'
+    type: complex
+    vlen: V
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [224, 76.0]
+    rotation: 0
+    state: enabled
+- name: zeromq_pull_source_0_0
+  id: zeromq_pull_source
+  parameters:
+    address: tcp://127.0.0.1:5552
+    affinity: ''
+    alias: ''
+    bind: 'False'
+    comment: ''
+    hwm: '-1'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    pass_tags: 'False'
+    timeout: '1'
+    type: complex
+    vlen: V
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [224, 164.0]
+    rotation: 0
+    state: enabled
+- name: zeromq_pull_source_0_0_0
+  id: zeromq_pull_source
+  parameters:
+    address: tcp://127.0.0.1:5560
+    affinity: ''
+    alias: ''
+    bind: 'False'
+    comment: ''
+    hwm: '-1'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    pass_tags: 'False'
+    timeout: '1'
+    type: complex
+    vlen: V
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [224, 876.0]
+    rotation: 0
+    state: enabled
+- name: zeromq_pull_source_0_1
+  id: zeromq_pull_source
+  parameters:
+    address: tcp://127.0.0.1:5553
+    affinity: ''
+    alias: ''
+    bind: 'False'
+    comment: ''
+    hwm: '-1'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    pass_tags: 'False'
+    timeout: '1'
+    type: complex
+    vlen: V
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [224, 252.0]
+    rotation: 0
+    state: enabled
+- name: zeromq_pull_source_0_1_0
+  id: zeromq_pull_source
+  parameters:
+    address: tcp://127.0.0.1:5561
+    affinity: ''
+    alias: ''
+    bind: 'False'
+    comment: ''
+    hwm: '-1'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    pass_tags: 'False'
+    timeout: '1'
+    type: complex
+    vlen: V
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [224, 956.0]
+    rotation: 0
+    state: enabled
+- name: zeromq_pull_source_0_2
+  id: zeromq_pull_source
+  parameters:
+    address: tcp://127.0.0.1:5554
+    affinity: ''
+    alias: ''
+    bind: 'False'
+    comment: ''
+    hwm: '-1'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    pass_tags: 'False'
+    timeout: '1'
+    type: complex
+    vlen: V
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [224, 340.0]
+    rotation: 0
+    state: enabled
+- name: zeromq_pull_source_0_2_0
+  id: zeromq_pull_source
+  parameters:
+    address: tcp://127.0.0.1:5562
+    affinity: ''
+    alias: ''
+    bind: 'False'
+    comment: ''
+    hwm: '-1'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    pass_tags: 'False'
+    timeout: '1'
+    type: complex
+    vlen: V
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [224, 1052.0]
+    rotation: 0
+    state: enabled
+- name: zeromq_pull_source_0_3
+  id: zeromq_pull_source
+  parameters:
+    address: tcp://127.0.0.1:5555
+    affinity: ''
+    alias: ''
+    bind: 'False'
+    comment: ''
+    hwm: '-1'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    pass_tags: 'False'
+    timeout: '1'
+    type: complex
+    vlen: V
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [224, 428.0]
+    rotation: 0
+    state: enabled
+- name: zeromq_pull_source_0_3_0
+  id: zeromq_pull_source
+  parameters:
+    address: tcp://127.0.0.1:5563
+    affinity: ''
+    alias: ''
+    bind: 'False'
+    comment: ''
+    hwm: '-1'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    pass_tags: 'False'
+    timeout: '1'
+    type: complex
+    vlen: V
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [224, 1132.0]
+    rotation: 0
+    state: enabled
+- name: zeromq_pull_source_0_4
+  id: zeromq_pull_source
+  parameters:
+    address: tcp://127.0.0.1:5556
+    affinity: ''
+    alias: ''
+    bind: 'False'
+    comment: ''
+    hwm: '-1'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    pass_tags: 'False'
+    timeout: '1'
+    type: complex
+    vlen: V
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [224, 516.0]
+    rotation: 0
+    state: enabled
+- name: zeromq_pull_source_0_4_0
+  id: zeromq_pull_source
+  parameters:
+    address: tcp://127.0.0.1:5564
+    affinity: ''
+    alias: ''
+    bind: 'False'
+    comment: ''
+    hwm: '-1'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    pass_tags: 'False'
+    timeout: '1'
+    type: complex
+    vlen: V
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [224, 1228.0]
+    rotation: 0
+    state: enabled
+- name: zeromq_pull_source_0_5
+  id: zeromq_pull_source
+  parameters:
+    address: tcp://127.0.0.1:5557
+    affinity: ''
+    alias: ''
+    bind: 'False'
+    comment: ''
+    hwm: '-1'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    pass_tags: 'False'
+    timeout: '1'
+    type: complex
+    vlen: V
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [224, 604.0]
+    rotation: 0
+    state: enabled
+- name: zeromq_pull_source_0_5_0
+  id: zeromq_pull_source
+  parameters:
+    address: tcp://127.0.0.1:5565
+    affinity: ''
+    alias: ''
+    bind: 'False'
+    comment: ''
+    hwm: '-1'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    pass_tags: 'False'
+    timeout: '1'
+    type: complex
+    vlen: V
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [224, 1308.0]
+    rotation: 0
+    state: enabled
+- name: zeromq_pull_source_0_6
+  id: zeromq_pull_source
+  parameters:
+    address: tcp://127.0.0.1:5558
+    affinity: ''
+    alias: ''
+    bind: 'False'
+    comment: ''
+    hwm: '-1'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    pass_tags: 'False'
+    timeout: '1'
+    type: complex
+    vlen: V
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [224, 692.0]
+    rotation: 0
+    state: enabled
+- name: zeromq_pull_source_0_6_0
+  id: zeromq_pull_source
+  parameters:
+    address: tcp://127.0.0.1:5566
+    affinity: ''
+    alias: ''
+    bind: 'False'
+    comment: ''
+    hwm: '-1'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    pass_tags: 'False'
+    timeout: '1'
+    type: complex
+    vlen: V
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [224, 1404.0]
+    rotation: 0
+    state: enabled
+- name: zeromq_pull_source_0_7
+  id: zeromq_pull_source
+  parameters:
+    address: tcp://127.0.0.1:5559
+    affinity: ''
+    alias: ''
+    bind: 'False'
+    comment: ''
+    hwm: '-1'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    pass_tags: 'False'
+    timeout: '1'
+    type: complex
+    vlen: V
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [224, 780.0]
+    rotation: 0
+    state: enabled
+- name: zeromq_push_sink_0
+  id: zeromq_push_sink
+  parameters:
+    address: tcp://127.0.0.1:6001
+    affinity: ''
+    alias: ''
+    bind: 'True'
+    comment: ''
+    hwm: '-1'
+    pass_tags: 'False'
+    timeout: '1'
+    type: complex
+    vlen: V
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [928, 60.0]
+    rotation: 0
+    state: enabled
+- name: zeromq_push_sink_0_0
+  id: zeromq_push_sink
+  parameters:
+    address: tcp://127.0.0.1:6002
+    affinity: ''
+    alias: ''
+    bind: 'True'
+    comment: ''
+    hwm: '-1'
+    pass_tags: 'False'
+    timeout: '1'
+    type: complex
+    vlen: V
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [928, 140.0]
+    rotation: 0
+    state: enabled
+- name: zeromq_push_sink_0_0_0
+  id: zeromq_push_sink
+  parameters:
+    address: tcp://127.0.0.1:6006
+    affinity: ''
+    alias: ''
+    bind: 'True'
+    comment: ''
+    hwm: '-1'
+    pass_tags: 'False'
+    timeout: '1'
+    type: complex
+    vlen: V
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [928, 492.0]
+    rotation: 0
+    state: enabled
+- name: zeromq_push_sink_0_0_0_0
+  id: zeromq_push_sink
+  parameters:
+    address: tcp://127.0.0.1:6014
+    affinity: ''
+    alias: ''
+    bind: 'True'
+    comment: ''
+    hwm: '-1'
+    pass_tags: 'False'
+    timeout: '1'
+    type: complex
+    vlen: V
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [928, 1196.0]
+    rotation: 0
+    state: enabled
+- name: zeromq_push_sink_0_0_1
+  id: zeromq_push_sink
+  parameters:
+    address: tcp://127.0.0.1:6010
+    affinity: ''
+    alias: ''
+    bind: 'True'
+    comment: ''
+    hwm: '-1'
+    pass_tags: 'False'
+    timeout: '1'
+    type: complex
+    vlen: V
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [928, 844.0]
+    rotation: 0
+    state: enabled
+- name: zeromq_push_sink_0_1
+  id: zeromq_push_sink
+  parameters:
+    address: tcp://127.0.0.1:6003
+    affinity: ''
+    alias: ''
+    bind: 'True'
+    comment: ''
+    hwm: '-1'
+    pass_tags: 'False'
+    timeout: '1'
+    type: complex
+    vlen: V
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [928, 236.0]
+    rotation: 0
+    state: enabled
+- name: zeromq_push_sink_0_1_0
+  id: zeromq_push_sink
+  parameters:
+    address: tcp://127.0.0.1:6007
+    affinity: ''
+    alias: ''
+    bind: 'True'
+    comment: ''
+    hwm: '-1'
+    pass_tags: 'False'
+    timeout: '1'
+    type: complex
+    vlen: V
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [928, 588.0]
+    rotation: 0
+    state: enabled
+- name: zeromq_push_sink_0_1_0_0
+  id: zeromq_push_sink
+  parameters:
+    address: tcp://127.0.0.1:6015
+    affinity: ''
+    alias: ''
+    bind: 'True'
+    comment: ''
+    hwm: '-1'
+    pass_tags: 'False'
+    timeout: '1'
+    type: complex
+    vlen: V
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [928, 1292.0]
+    rotation: 0
+    state: enabled
+- name: zeromq_push_sink_0_1_1
+  id: zeromq_push_sink
+  parameters:
+    address: tcp://127.0.0.1:6011
+    affinity: ''
+    alias: ''
+    bind: 'True'
+    comment: ''
+    hwm: '-1'
+    pass_tags: 'False'
+    timeout: '1'
+    type: complex
+    vlen: V
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [928, 940.0]
+    rotation: 0
+    state: enabled
+- name: zeromq_push_sink_0_2
+  id: zeromq_push_sink
+  parameters:
+    address: tcp://127.0.0.1:6004
+    affinity: ''
+    alias: ''
+    bind: 'True'
+    comment: ''
+    hwm: '-1'
+    pass_tags: 'False'
+    timeout: '1'
+    type: complex
+    vlen: V
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [928, 316.0]
+    rotation: 0
+    state: enabled
+- name: zeromq_push_sink_0_2_0
+  id: zeromq_push_sink
+  parameters:
+    address: tcp://127.0.0.1:6008
+    affinity: ''
+    alias: ''
+    bind: 'True'
+    comment: ''
+    hwm: '-1'
+    pass_tags: 'False'
+    timeout: '1'
+    type: complex
+    vlen: V
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [928, 668.0]
+    rotation: 0
+    state: enabled
+- name: zeromq_push_sink_0_2_0_0
+  id: zeromq_push_sink
+  parameters:
+    address: tcp://127.0.0.1:6016
+    affinity: ''
+    alias: ''
+    bind: 'True'
+    comment: ''
+    hwm: '-1'
+    pass_tags: 'False'
+    timeout: '1'
+    type: complex
+    vlen: V
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [928, 1372.0]
+    rotation: 0
+    state: enabled
+- name: zeromq_push_sink_0_2_1
+  id: zeromq_push_sink
+  parameters:
+    address: tcp://127.0.0.1:6012
+    affinity: ''
+    alias: ''
+    bind: 'True'
+    comment: ''
+    hwm: '-1'
+    pass_tags: 'False'
+    timeout: '1'
+    type: complex
+    vlen: V
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [928, 1020.0]
+    rotation: 0
+    state: enabled
+- name: zeromq_push_sink_0_3
+  id: zeromq_push_sink
+  parameters:
+    address: tcp://127.0.0.1:6005
+    affinity: ''
+    alias: ''
+    bind: 'True'
+    comment: ''
+    hwm: '-1'
+    pass_tags: 'False'
+    timeout: '1'
+    type: complex
+    vlen: V
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [928, 412.0]
+    rotation: 0
+    state: enabled
+- name: zeromq_push_sink_0_3_0
+  id: zeromq_push_sink
+  parameters:
+    address: tcp://127.0.0.1:6013
+    affinity: ''
+    alias: ''
+    bind: 'True'
+    comment: ''
+    hwm: '-1'
+    pass_tags: 'False'
+    timeout: '1'
+    type: complex
+    vlen: V
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [928, 1116.0]
+    rotation: 0
+    state: enabled
+- name: zeromq_push_sink_0_4
+  id: zeromq_push_sink
+  parameters:
+    address: tcp://127.0.0.1:6009
+    affinity: ''
+    alias: ''
+    bind: 'True'
+    comment: ''
+    hwm: '-1'
+    pass_tags: 'False'
+    timeout: '1'
+    type: complex
+    vlen: V
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [928, 764.0]
+    rotation: 0
+    state: enabled
+
+connections:
+- [zeromq_pull_source_0, '0', zeromq_push_sink_0, '0']
+- [zeromq_pull_source_0_0, '0', zeromq_push_sink_0_0, '0']
+- [zeromq_pull_source_0_0_0, '0', zeromq_push_sink_0_0_1, '0']
+- [zeromq_pull_source_0_1, '0', zeromq_push_sink_0_1, '0']
+- [zeromq_pull_source_0_1_0, '0', zeromq_push_sink_0_1_1, '0']
+- [zeromq_pull_source_0_2, '0', zeromq_push_sink_0_2, '0']
+- [zeromq_pull_source_0_2_0, '0', zeromq_push_sink_0_2_1, '0']
+- [zeromq_pull_source_0_3, '0', zeromq_push_sink_0_3, '0']
+- [zeromq_pull_source_0_3_0, '0', zeromq_push_sink_0_3_0, '0']
+- [zeromq_pull_source_0_4, '0', zeromq_push_sink_0_0_0, '0']
+- [zeromq_pull_source_0_4_0, '0', zeromq_push_sink_0_0_0_0, '0']
+- [zeromq_pull_source_0_5, '0', zeromq_push_sink_0_1_0, '0']
+- [zeromq_pull_source_0_5_0, '0', zeromq_push_sink_0_1_0_0, '0']
+- [zeromq_pull_source_0_6, '0', zeromq_push_sink_0_2_0, '0']
+- [zeromq_pull_source_0_6_0, '0', zeromq_push_sink_0_2_0_0, '0']
+- [zeromq_pull_source_0_7, '0', zeromq_push_sink_0_4, '0']
+
+metadata:
+  file_format: 1
+  grc_version: 3.10.12.0
