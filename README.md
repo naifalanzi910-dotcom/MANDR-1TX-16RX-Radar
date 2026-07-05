@@ -1,4 +1,4 @@
-# FMCW 1TX/16RX FMCW Radar Project
+# MANDR 1TX/16RX FMCW Radar Project
 
 This repository contains a MATLAB-based FMCW radar simulation and processing project using a **1TX/16RX** antenna configuration. The project simulates complex FMCW beat signals across a 16-channel receive array and processes the received radar data using range-Doppler processing, CFAR detection, MUSIC angle estimation, and EKF-based target tracking.
 
